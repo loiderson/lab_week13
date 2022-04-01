@@ -13,3 +13,13 @@ function copyFunc(evt) {
 
 originalsCopy.addEventListener('click', copyFunc)
 
+
+
+
+const deletecopies = document.querySelector(".copies")
+const buttondelet = document.querySelector()
+
+function copyDelete(evt) {
+  const buttonclear = document.addEventListener('button', deletecopies)
+  
+}
