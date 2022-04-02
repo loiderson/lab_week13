@@ -3,23 +3,25 @@ const copySection = document.querySelector(".copy-container")
 
 
 function copyFunc(evt) {
-    const copyTemplate = `
-    <div>
-        <p>${evt.target.innerText}</p>
-    </div>
-    `
-    copySection.insertAdjacentHTML("afterbegin", copyTemplate)
-  }
+  const copyTemplate = `
+  <div>
+      <p>${evt.target.innerText}</p>
+  </div>
+  `
+  copySection.insertAdjacentHTML("afterbegin", copyTemplate)
+}
 
 originalsCopy.addEventListener('click', copyFunc)
 
 
 
+const deletecopies = document.querySelectorAll(".copies")
 
-const deletecopies = document.querySelector(".copies")
-const buttondelet = document.querySelector()
-
-function copyDelete(evt) {
-  const buttonclear = document.addEventListener('button', deletecopies)
-  
+function copyDelete() {
+  const deletebutton = document.querySelector("button") //not getting called, tried everything idk.
+  const removal = document.getElementById(".copy-container")
+  removal.remove();
 }
+
+  deletebutton.addEventListener('click', copyDelete)
+
